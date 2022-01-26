@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 body.dark-theme{
-    background: #222227;
+    background: #202027;
     color: #cecece;
 }
 ul.no-style{
@@ -23,6 +23,8 @@ a{
     font-weight: 500;
     font-size: 2em;
     color: #cecece;
+    user-select: none;
+    cursor: not-allowed;
 }
 .sec-heading::before{
     content: "# ";
@@ -45,14 +47,14 @@ a{
     box-sizing: border-box;
 }
 .grid-container .list-item > a{
-    background: #33333d;
+    background: #30303d;
     border-radius: 4px;
     overflow: hidden;
     display: block;
     transition: background 0.1s;
 }
 .grid-container .list-item:hover > a{
-    background: rgba(40, 111, 218, 0.8);
+    background: rgba(42, 117, 230, 0.8);
 }
 .grid-container .list-item a span{
     display: inline-block;
@@ -77,10 +79,29 @@ a{
     width: 100%;
 }
 
+/* == footer == */
+footer{
+    border-top: solid 1px #333;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer > .social-links{
+    display: flex;
+    justify-content: center;
+}
+footer > .social-links li a{
+    font-size: 30px;
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+footer > .social-links li:hover{
+    color: rgba(45, 124, 241, 0.8);;
+}
+
 
 /* == responsive == */
 body{
-    padding: 1rem;
+    padding: 0 1rem;
 }
 .sec-heading{
     margin: 1rem;
@@ -88,7 +109,7 @@ body{
     font-weight: 400;
 }
 .sec-heading::before{
-    color:rgba(40, 111, 218, 0.8);
+    color:rgba(41, 118, 235, 0.8);
 }
 .grid-container .list{
     flex-flow: column nowrap;
@@ -108,7 +129,7 @@ body{
 
 @media screen and (min-width: 700px){
     body{
-        padding: 1rem 50px;
+        padding: 0rem 50px;
     }
     .list-item > a{
         padding: 1.1rem 1.7rem;
@@ -117,7 +138,7 @@ body{
 
 @media screen and (min-width: 1024px){
     body{
-        padding: 1rem 100px;
+        padding: 0rem 100px;
     }
     .sec-heading{
         margin-top: 1.5em;

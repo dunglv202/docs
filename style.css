@@ -1,0 +1,137 @@
+html{
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    margin: 0;
+}
+body.dark-theme{
+    background: #222227;
+    color: #cecece;
+}
+ul.no-style{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-heading{
+    font-weight: 500;
+    font-size: 2em;
+    color: #cecece;
+}
+.sec-heading::before{
+    content: "# ";
+    color: #777;
+    font-weight: 500 !important;
+}
+.sec-heading:hover{
+    color: #fff;
+    transition: 0.1s;
+}
+.sec-heading:hover::before{
+    color: #44cba2;
+}
+
+.grid-container .list{
+    display: flex;
+    flex-flow: row wrap;
+}
+.grid-container .list-item{
+    box-sizing: border-box;
+}
+.grid-container .list-item > a{
+    background: #33333d;
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    transition: background 0.1s;
+}
+.grid-container .list-item:hover > a{
+    background: rgba(40, 111, 218, 0.8);
+}
+.grid-container .list-item a span{
+    display: inline-block;
+    font-weight: 400;
+}
+.hover-eff > span{
+    position: relative;
+}
+.hover-eff > span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-bottom: solid 2px #f0f0f0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.2s;
+}
+.hover-eff:hover > span{
+    color: #f0f0f0;
+}
+.hover-eff:hover > span::after{
+    width: 100%;
+}
+
+
+/* == responsive == */
+body{
+    padding: 1rem;
+}
+.sec-heading{
+    margin: 1rem;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+.sec-heading::before{
+    color:rgba(40, 111, 218, 0.8);
+}
+.grid-container .list{
+    flex-flow: column nowrap;
+}
+.list-item > a{
+    padding: 0.9rem;
+}
+.grid-container .list-item{
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 450px){
+    .grid-container .list{
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (min-width: 700px){
+    body{
+        padding: 1rem 50px;
+    }
+    .list-item > a{
+        padding: 1.1rem 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        padding: 1rem 100px;
+    }
+    .sec-heading{
+        margin-top: 1.5em;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .list-item > a{
+        padding: 1.2rem 1.8rem;
+    }
+    .grid-container .list-item{
+        padding: 0.7rem;
+    }
+    .grid-container .list-item a span{
+        display: inline-block;
+        font-weight: 500;
+    }
+}

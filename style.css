@@ -46,7 +46,7 @@ a{
 }
 .grid-container .list-item > a{
     background: #33333d;
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
     display: block;
     transition: background 0.1s;

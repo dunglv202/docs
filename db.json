@@ -1,6 +1,19 @@
 {
     "data" : [
         {
+            "heading": "Java References",
+            "list": [
+                {
+                    "title": "Java Tutorial Oracle",
+                    "url": "https://docs.oracle.com/javase/tutorial"
+                },
+                {
+                    "title": "Java Reference Oracle",
+                    "url": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html"
+                }
+            ]
+        },
+        {
             "heading": "My Courses",
             "list": [
                 {
